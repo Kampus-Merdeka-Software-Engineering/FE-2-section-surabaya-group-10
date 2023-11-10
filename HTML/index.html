@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="style3.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="background-image">
+        <div class="logo-section">
+          <img src="Asset/revou.png" alt="Revou" class="logo revou-logo">
+          <img src="Asset/kampusmerdeka.png" alt="Kampus Merdeka" class="logo kampus-merdeka-logo">
+        </div>
+        <div class="top-buttons">
+          <a href="index.html" class="home-button">Home</a>
+          <a href="booking.html" class="booking-button">Booking</a>
+          <a href="about.html" class="about-button">About Us</a>
+        </div>
+        <img src="Asset/RedDoorz_Logo.png" alt="Hotel" class="logo hotel"> 
+        <div class="welcome-section">
+            <img src="Asset/RedDoorz_Logo.png" alt="Hotel" class="logo hotel">
+            <h1><strong>Welcome to[Ceria Staycation]</strong></h1>
+            <p class="welcome-section-text">Enhance your experience and immerse yourself in unmatched luxury by booking your stay with us on a cheerful staycation today. From the moment you arrive you can enjoy luxurious facilities, impeccable service, and a world of sophistication that awaits. Escape to a world where every detail is carefully crafted to offer you an unforgettable experience.
+              Secure your reservation now and unlock a world of luxury that exceeds your expectations.
+                Discover a paradise where luxury meets perfection, promising an unparalleled vacation like no other.</p>
+            <a href="booking.html" class="booking-now-button fade-in">Booking Now</a>
+          </div>
+      </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const footer = document.querySelector('footer');
+          const welcomeSection = document.querySelector('.welcome-section'); 
+          const hotelLogo = document.querySelector('.logo.hotel');    
+          footer.classList.add('show');
+          welcomeSection.classList.add('show');
+          setTimeout(function() {
+            hotelLogo.classList.add('show'); 
+          }, 500); 
+        });
+      </script>
+  <footer>
+    Group 10 Section Surabaya © 2023
+    <br>
+    <i>Software Engineering Capstone Project</i>
+    </br>
+  </footer>
+</body>
+</html>
+
