@@ -1,5 +1,5 @@
 # FE-2-section-surabaya-group-10
-Our Group 10 for Software Engineering Capstone Project is centered around the front-end development of a dynamic and user-friendly website. This web application is a key component of the innovative program, RevoU Kampus Merdeka, designed to enhance the educational experience. The project is crafted using HTML, CSS, and JavaScript to ensure a seamless and engaging user interface.
+This is our Group 10 Software Engineering Capstone Project front-end development. This web application is a key component of the innovative program, RevoU Kampus Merdeka, designed to enhance the educational experience. The project is crafted using HTML, CSS, and JavaScript to ensure a seamless and engaging user interface.
 
 # Technology Stack:
 
