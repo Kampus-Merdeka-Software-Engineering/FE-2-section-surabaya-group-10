@@ -6,6 +6,7 @@ This is our Group 10 Software Engineering Capstone Project front-end development
 * HTML (Hypertext Markup Language)
 * CSS (Cascading Style Sheets)
 * JavaScript
+* Visual Studio Code
 
 # Design Process with Figma:
 
