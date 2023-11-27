@@ -1,0 +1,693 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100&display=swap');
+
+* {
+  font-family: 'Poppins', 'Roboto', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+/* -------------------welcome----------------------- */
+
+/* Styling untuk popup selamat datang */
+.custom-title-class {
+  color: #ffffff !important; /* Warna judul */
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.swal2-title img{
+  max-width: 180px !important;
+}
+
+.swal2-html-container {
+  font-size: 16px;
+  color: #ffffff !important; /* Warna teks */
+  max-width: 600px; /* Lebar maksimum */
+  text-align: left; /* Arah teks */
+  line-height: 1.6; /* Tinggi baris */
+}
+
+.swal2-popup {
+  background-color: #202020 !important; /* Warna latar belakang popup */
+  border-radius: 20px !important; /* Sudut melengkung */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+.swal2-confirm {
+  background-color: #fb4042 !important ; /* Warna tombol OK */
+  color: #fff; /* Warna teks tombol OK */
+  padding: 10px 40px !important;
+  border-radius: 20px; /* Sudut melengkung tombol OK */
+} 
+
+/* -------------------navbar------------------------ */
+
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.section1 img {
+  width: 100%;
+  height: 50vw;
+  object-fit: cover;
+  position: absolute;
+  z-index: 89;
+}
+
+nav {
+  max-width: 1200px;
+  margin: auto;
+  position: absolute;
+  z-index: 90;
+  width: 100%;
+  padding: 16px 0px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.logo img {
+  width: 200px;
+  height: auto;
+}
+
+/* Updated button hover effect */
+.home-button:hover,
+.home-button:active,
+.about-button:hover,
+.about-button:active,
+.booking-button:hover,
+.booking-button:active {
+  color: #ff0000;
+  /* background-color: #303030; */
+  /* Change text color on hover */
+}
+
+/* Additional or modified CSS for button positioning (if necessary) */
+.home-button,
+.about-button{
+  display: inline-block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #000000;
+  border-radius: 60px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* border: 5px solid #ffffff; */
+  transition: all 0.3s ease;
+  margin-right: 10px;
+  /* margin-top: 10px; */
+  /* Adjust the top margin */
+}
+
+.home-button {
+  background-color: #ffffff;
+}
+
+.about-button {
+  background-color: #ffffff;
+}
+
+.home-button:hover,
+.home-button:active {
+  /* background-color: #ffffff; */
+  /* Change color as needed */
+  transform: translateY(-5px);
+}
+
+.about-button:hover,
+.about-button:active {
+  /* background-color: #ffffff; */
+  /* Change color as needed */
+  transform: translateY(-5px);
+}
+
+/* .xs {
+  display: flex;
+  align-items: center;
+} */
+
+
+/* -------------------content------------------------ */
+
+
+.search {
+  background-color: #fff;
+  padding: 0 20px;
+  border-radius: 40px;
+  margin-top: 40%;
+  display: inline-block;
+  text-align: left;
+  width: 964px;
+  position: relative;
+  box-sizing: border-box;
+  padding: 2px 12px 2px 24px;
+  filter: drop-shadow(0 8px 16px rgba(26, 31, 77, .160784));
+  border: 1px solid #d9e5ea;
+  z-index: 90;
+}
+
+.searchbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  vertical-align: middle;
+  align-items: center;
+  padding: 10px;
+}
+
+.inputbar {
+  vertical-align: middle;
+  align-items: center;
+  display: inline-flex;
+  border-left: 1px solid #e8e8e8;
+  min-width: 120px;
+  border: none;
+  position: relative;
+}
+
+.inputbar input {
+  color: #6d747f;
+  font-weight: 700;
+  font-size: 18px;
+  border: 0;
+  width: 250px;
+  outline: none;
+}
+
+.searchbar button {
+  font-size: 12px;
+  color: #303030;
+  border: 0;
+  font-weight: 700;
+  padding: 12px;
+  margin: 0;
+  width: 180px;
+  cursor: pointer;
+  text-align: left;
+  position: relative;
+}
+
+.searchBtn1 {
+  background: #fff;
+}
+
+.searchBtn1 input{
+  border: none;
+}
+
+.searchBtn {
+  width: 104px;
+  min-height: 54px;
+  background: #ec2224;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  vertical-align: middle;
+  align-items: center;
+  margin-left: 55px;
+  background-image: linear-gradient(90deg, #fb4042, #ec228a);
+}
+
+.searchBtn p {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+/* Your existing styles */
+
+
+/* --------------------Top Destination----------------- */
+
+.topDestination{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 10%;
+}
+.topDestination h2{
+    font-size: 32px;
+}
+
+.TD{
+    position: relative;
+}
+
+.cardTD{
+  scroll-padding-left: 52px;
+  scroll-behavior: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-tap-highlight-color: transparent;
+  color: inherit;
+  fill: inherit;
+  display: flex;
+  overflow: auto hidden;
+  margin-bottom: -16px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.cardTD2{
+  -webkit-tap-highlight-color: white;
+  color: inherit;
+  fill: inherit;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  margin-right: 8px;
+  margin-left: 8px;
+  padding-bottom: 16px;
+}
+
+.itemTD{
+  display: block;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.itemTD a{
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgb(83, 146, 249);
+  margin-right: 0px;
+  margin-left: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: inline-block;
+}
+.itemTD img{
+  border: white;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 1px;
+  height: 124px;
+  width: 124px;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s,-webkit-transform .2s;
+  
+}
+
+.itemTD span{
+  color: black;
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 34px;
+  line-height: 22px;
+  max-height: 34px;
+  overflow: hidden;
+  padding-top: 12px;
+  position: relative;
+  text-align: center;
+}
+
+/* Add these styles to your existing CSS */
+
+.topDestination {
+  position: relative;
+}
+
+.navigation-buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+}
+
+.navigation-buttons button {
+  background-color: #4CAF50; /* Green background color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0 10px; /* Adjust the margin as needed */
+}
+
+.navigation-buttons button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+
+/* ----------------------Promotion---------------------------- */
+
+.promotion{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 5%;
+}
+.promotion h2{
+  font-size: 32px;
+  text-align: left;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px;
+  padding: 0px;
+}
+
+.grid-item {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.grid-item img {
+  width: 110%;
+  height: 110%;
+  object-fit: cover;
+}
+/* ----------------------Recomended---------------------------- */
+
+.recommended {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.recommended h2 {
+  font-size: 32px;
+  text-align: center;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Three columns, adjust as needed */
+  grid-template-rows: auto; /* You can adjust this based on your design */
+  gap: 20px; /* Adjust the gap between grid items */
+  justify-content: center; /* Center the cards horizontally */
+  padding: 0px;
+  margin-top: 3%;
+}
+
+.card {
+  width: 100%;
+  margin: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.card p {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.card h4 {
+  color: #ec2224;
+}
+/* ---------------------------------footer--------------------------------------- */
+.footer {
+  position: relative;
+  width: 100%;
+  background: #202020;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top: #000000;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: white;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #000000;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: white;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* ----------------------responsive-----------------------*/
+
+@media screen and (max-width: 768px) {
+  .logo img {
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 150px;
+    height: auto;
+  }
+
+  /* ---search--- */
+  .search {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    margin-top: 100px;
+    text-align: center; /* Center the search bar */
+  }
+  
+  .searchbar {
+    flex-direction: column;
+    align-items: center; /* Center the items vertically */
+  }
+  
+  .inputbar {
+    border-left: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+    margin-left: 0; /* Remove left margin */
+  }
+  
+  .inputbar input {
+    margin-left: 0; /* Remove left margin */
+  }
+  
+  .searchBtn1,
+  .searchBtn {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 250px !important;
+    display: flex;
+  }
+  .searchBtn1 input {
+    margin-left: 20px !important; 
+  }
+  /* ----top destination---- */
+  .topDestination h2{
+    font-size: 24px !important;
+    margin-left: 10px;
+  }
+  .itemTD {
+    width: 100% !important;
+    margin-bottom: 24px !important;
+    
+  }
+
+  .itemTD a {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    margin-left: 5px !important;
+  }
+
+  .itemTD img {
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+  .itemTD span {
+    margin-top: 10px !important;
+    font-size: 14px !important; 
+  }
+  /* ----promotion---- */
+  .promotion h2 {
+    font-size: 24px !important;
+    margin-left: 10px !important;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+
+  .grid-item img {
+    width: 100% !important;
+    height: auto !important; 
+  }
+
+  /* ----recommended---- */
+  .recommended{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 0px !important;
+  }
+  .recommended h2{
+    font-size: 24px !important;
+    text-align: center;
+  }
+  .card-container {
+    margin: 0 10px;
+    grid-template-columns: repeat(2, 1fr); /* Change to a single column on smaller screens */
+  }
+
+  .wrapper {
+    margin: 0 10px;
+  }
+
+}
+
+/* Di dalam tag <style> atau dalam file style.css Anda */
+.searchBtn.animated {
+  animation: bounce 1s ease;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+/* ---------Email Subs---------- */
+.wrapper {
+  height: 50vh;
+  position: realtive;
+}
+
+.fas.fa-envelope {
+  color: #fff;
+  font-size: 2rem;
+  background: linear-gradient(90deg, #fb4042, #ec228a);
+  padding: 1rem;
+  border-radius: 100%;
+  margin: 0 0 1rem 0;
+}
+
+.card-content2 {
+  max-width: 30rem;
+  background-color: #202020;
+  color: white;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 1rem;
+  padding: 4rem .5rem;
+  box-shadow: 1px 1px 1rem rgba(0,0,0,.3);
+  text-align: center;
+}
+
+.card-content2 h1 {
+  text-transform: uppercase;
+  margin: 0 0 1rem 0;
+}
+
+.card-content2 p {
+  font-size: .8rem;
+  margin: 0 0 2rem 0;
+}
+
+.form-input2 input {
+  padding: .8rem 1rem;
+  width: 40%;
+  border-radius: 5rem;
+  outline: none;
+  border: .1rem solid #d1d1d1;
+  font-size: .7rem;
+}
+
+::placeholder {
+  color: #d1d1d1;
+}
+
+.subscribe-btn {
+  padding: .8rem 2rem;
+  border-radius: 5rem;
+  background: linear-gradient(90deg, #fb4042, #ec228a);
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
