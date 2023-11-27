@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Capstone Project</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="section1">
+        <nav>
+            <div class="logo"><img src="Asset/archipelago.png" alt=""></div>
+            <div class="top-buttons">
+                <a href="index.html" class="home-button">Home</a>
+                <a href="about.html" class="about-button">About Us</a>
+            </div>
+        </nav>
+        <img src="Asset/pict1-lp.jpg" alt="">
+
+        <div class="search">
+            <div class="searchbar">
+                <div class="inputbar">
+                    <input id="searchInput" name="searchInput" type="text" placeholder="Enter a City, Locality or Hotel" value>
+                </div>
+                <button class="searchBtn1">
+                    <p><span>Check In</span></p>
+                    <span> <input type="date" id="check-in-date" name="check-in-date" required></span>
+                </button>
+                <button class="searchBtn1">
+                    <p><span>Check Out</span></p>
+                    <span><input type="date" id="check-out-date" name="check-out-date" required></span>
+                </button>
+                <button class="searchBtn">
+                    <a href="list-hotel.html"><p>Cari</p></a>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="topDestination" id="top-destination">
+                <h2>Top Destination</h2>
+                <div class="TD">
+                    <div class="cardTD">
+                        <div class="cardTD2">
+                            <div class="itemTD" onclick="setSearchInput('Jakarta')">
+                                <a href="list-hotel.html">
+                                    <img src="Asset/jakarta.jpeg" alt="">
+                                    <span>Jakarta</span>
+                                </a>
+                            </div>
+                            <div class="itemTD">
+                                <a href="">
+                                    <img src="Asset/td2.jpg" alt="">
+                                    <span>Bali</span>
+                                </a>
+                            </div>
+                            <div class="itemTD">
+                                <a href="">
+                                    <img src="Asset/td3.jpg" alt="">
+                                    <span>Bandung</span>
+                                </a>
+                            </div>
+                            <div class="itemTD">
+                                <a href="">
+                                    <img src="Asset/td4.jpg" alt="">
+                                    <span>Yogyakarta</span>
+                                </a>
+                            </div>
+                            <div class="itemTD">
+                                <a href="">
+                                    <img src="Asset/td5.jpg" alt="">
+                                    <span>Surabaya</span>
+                                </a>
+                            </div>
+                            <div class="itemTD">
+                                <a href="">
+                                    <img src="Asset/td6.jpg" alt="">
+                                    <span>Palembang</span>
+                                </a>
+                            </div>
+                            <div class="itemTD">
+                                <a href="">
+                                    <img src="Asset/td7.jpg" alt="">
+                                    <span>Semarang</span>
+                                </a>
+                            </div>
+                            <div class="itemTD">
+                                <a href="">
+                                    <img src="Asset/td8.jpg" alt="">
+                                    <span>Bogor</span>
+                                </a>
+                            </div>
+                            <div class="itemTD">
+                                <a href="">
+                                    <img src="Asset/td9.jpg" alt="">
+                                    <span>Malang</span>
+                                </a>
+                            </div>
+                            <div class="itemTD">
+                                <a href="">
+                                    <img src="Asset/td10.webp" alt="">
+                                    <span>Batam</span>
+                                </a>
+                            </div>
+                            <div class="itemTD">
+                                <a href="">
+                                    <img src="Asset/td11.webp" alt="">
+                                    <span>Solo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="promotion" id="promotion">
+                <h2>Promotion</h2>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="Asset/promo1.png" alt="Gambar 1">
+                    </div>
+                    <div class="grid-item">
+                        <img src="Asset/promo2.png" alt="Gambar 2">
+                    </div>
+                    <div class="grid-item">
+                        <img src="Asset/promo3.png" alt="Gambar 3">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="recommended" id="recommended">
+                <h2>Recommended for you</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <a href="hotel-detail.html">
+                            <img src="https://images.reddoorz.com/photos/256966/android_app_large_520x420_slice1.webp"
+                            alt="Gambar 1">
+                            <div class="card-content">
+                                <h3>Sans Hotel Puri Indah Jakarta</h3>
+                                <p>Kembangan</p>
+                                <h4>Rp288,000</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="hotel-detail.html">
+                            <img src="https://images.reddoorz.com/photos/256966/android_app_large_520x420_slice1.webp"
+                            alt="Gambar 1">
+                            <div class="card-content">
+                                <h3>Sans Hotel Puri Indah Jakarta</h3>
+                                <p>Kembangan</p>
+                                <h4>Rp288,000</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="hotel-detail.html">
+                            <img src="https://images.reddoorz.com/photos/256966/android_app_large_520x420_slice1.webp"
+                            alt="Gambar 1">
+                            <div class="card-content">
+                                <h3>Sans Hotel Puri Indah Jakarta</h3>
+                                <p>Kembangan</p>
+                                <h4>Rp288,000</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="hotel-detail.html">
+                            <img src="https://images.reddoorz.com/photos/256966/android_app_large_520x420_slice1.webp"
+                            alt="Gambar 1">
+                            <div class="card-content">
+                                <h3>Sans Hotel Puri Indah Jakarta</h3>
+                                <p>Kembangan</p>
+                                <h4>Rp288,000</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="hotel-detail.html">
+                            <img src="https://images.reddoorz.com/photos/256966/android_app_large_520x420_slice1.webp"
+                            alt="Gambar 1">
+                            <div class="card-content">
+                                <h3>Sans Hotel Puri Indah Jakarta</h3>
+                                <p>Kembangan</p>
+                                <h4>Rp288,000</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="hotel-detail.html">
+                            <img src="https://images.reddoorz.com/photos/256966/android_app_large_520x420_slice1.webp"
+                            alt="Gambar 1">
+                            <div class="card-content">
+                                <h3>Sans Hotel Puri Indah Jakarta</h3>
+                                <p>Kembangan</p>
+                                <h4>Rp288,000</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="hotel-detail.html">
+                            <img src="https://images.reddoorz.com/photos/256966/android_app_large_520x420_slice1.webp"
+                            alt="Gambar 1">
+                            <div class="card-content">
+                                <h3>Sans Hotel Puri Indah Jakarta</h3>
+                                <p>Kembangan</p>
+                                <h4>Rp288,000</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="hotel-detail.html">
+                            <img src="https://images.reddoorz.com/photos/256966/android_app_large_520x420_slice1.webp"
+                            alt="Gambar 1">
+                            <div class="card-content">
+                                <h3>Sans Hotel Puri Indah Jakarta</h3>
+                                <p>Kembangan</p>
+                                <h4>Rp288,000</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="hotel-detail.html">
+                            <img src="https://images.reddoorz.com/photos/256966/android_app_large_520x420_slice1.webp"
+                            alt="Gambar 1">
+                            <div class="card-content">
+                                <h3>Sans Hotel Puri Indah Jakarta</h3>
+                                <p>Kembangan</p>
+                                <h4>Rp288,000</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="hotel-detail.html">
+                            <img src="https://images.reddoorz.com/photos/256966/android_app_large_520x420_slice1.webp"
+                            alt="Gambar 1">
+                            <div class="card-content">
+                                <h3>Sans Hotel Puri Indah Jakarta</h3>
+                                <p>Kembangan</p>
+                                <h4>Rp288,000</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="wrapper">
+                <form action="#" class="card-content2">
+                  <div class="container">
+                    <div class="image">
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                    <h1>Subscribe</h1>
+                    <p>Subscribe to our updates for the latest promotions and news.</p>
+                  </div>
+                  <div class="form-input2">
+                    <label for="email"></label>
+                    <input type="email" placeholder="Your Email">
+                    <button class="subscribe-btn">Subscribe</button>
+                  </div>
+                </form>
+              </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="social-icon">
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+        </ul>
+        <!-- <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+    
+        </ul> -->
+        <p>Group 10 Section Surabaya © 2023 </p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Tampilkan SweetAlert pop-up welcome saat halaman dimuat
+            Swal.fire({
+                title: 'Welcome to <br><img src="Asset/archipelago.png" alt="Custom Icon">',
+                html: 'Enhance your experience and immerse yourself in unmatched luxury by booking your stay with us on a cheerful staycation today. From the moment you arrive you can enjoy luxurious facilities, impeccable service, and a world of sophistication that awaits. Escape to a world where every detail is carefully crafted to offer you an unforgettable experience. Secure your reservation now and unlock a world of luxury that exceeds your expectations. Discover a paradise where luxury meets perfection, promising an unparalleled vacation like no other.',
+                confirmButtonText: 'OK',
+                customClass: {
+                    popup: 'custom-popup-class', // Ganti dengan kelas CSS sesuai kebutuhan
+                    title: 'custom-title-class', // Ganti dengan kelas CSS sesuai kebutuhan
+                    htmlContainer: 'custom-html-class', // Ganti dengan kelas CSS sesuai kebutuhan
+                },
+            });
+        });
+    </script>
+<!-- Di dalam tag <script> di akhir halaman HTML Anda -->
+    <script>
+        
+    </script>      
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
