@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style3.css">
+    <title>Capstone Project</title>
+</head>
+
+<body>
+    <header class="section1">
+        <nav>
+            <div class="logo"><img src="/Asset/archipelago.png" alt=""></div>
+            <div class="top-buttons">
+                <a href="/index.html" class="home-button">Home</a>
+                <a href="/html/about.html" class="about-button">About Us</a>
+            </div>
+        </nav>
+        <img src="/Asset/pict1.jpg" alt="">
+
+        <div class="search">
+            <div class="searchbar">
+                <div class="inputbar">
+                    <input id="searchInput" name="searchInput" type="text" placeholder="Enter a City, Locality or Hotel"
+                        value>
+                </div>
+                <button class="searchBtn1">
+                    <p><span>Check In</span></p>
+                    <span><input type="date" id="check-in-date" name="check-in-date" required></span>
+                </button>
+                <button class="searchBtn1">
+                    <p><span>Check Out</span></p>
+                    <span><input type="date" id="check-out-date" name="check-out-date" required></span>
+                </button>
+                <button class="searchBtn">
+                    <a href="/html/list-hotel.html">
+                        <p>Cari</p>
+                    </a>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <div class="image-grid">
+                    <img class="image-grid-col-2 image-grid-row-2" src="/Asset/amanuba1.webp" alt="">
+                    <img src="/Asset/amanuba2.webp" alt="">
+                    <img src="/Asset/amanuba3.jpg" alt="">
+                    <img src="/Asset/amanuba4.jpg" alt="">
+                    <img src="/Asset/amanuba5.jpg" alt="">
+                </div>
+                <h2 class="nama-hotel">Amanuba Hotel & Resort Rancamaya
+                </h2>
+                <h3 class="alamat-hotel">Jalan Rancamaya, Rancamaya, Bogor, Indonesia, 16139</h3>
+                <div class="detail">
+                    <section class="content">
+                        <article class="tentang-hotel">
+                            <h3>Tentang hotel</h3>
+                            <P>Car parking and Wi-Fi are always free, so you can stay connected 
+                                and come and go at any time. Strategically located in Rancamaya 
+                                which is part of Bogor, this property puts you close to 
+                                interesting attractions and restaurant options. Don't go home 
+                                before visiting the famous Bogor Botanical Gardens. 
+                                Boasting a 4-star rating, this classy property provides on-site 
+                                guests with access to an indoor pool and restaurant.
+                            </P>
+                        </article>
+                        <section class="fasilitas">
+                            <h3>Fasilitas</h3>
+                            <ul>
+                                <li>Airport Shuttle</li>
+                                <li>BBQ Facility</li>
+                                <li>Free Wifi</li>
+                                <!-- Tambahkan fasilitas lainnya sesuai kebutuhan -->
+                            </ul>
+                        </section>
+                        <section class="detail-lainnya">
+                            <h3>Peta</h3>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.8428087944685!2d106.8304876733168!3d-6.666392965167345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c8d8e07f99a5%3A0x72c3b8c63b08eec6!2sAMANUBA%20Hotel%20%26%20Resort%20Rancamaya%20Bogor!5e0!3m2!1sid!2sus!4v1701519104894!5m2!1sid!2sus"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </section>
+                    </section>
+
+                    <aside>
+                        <section class="booking-form">
+                            <h2>Rp900,000</h2>
+                            <form action="http://localhost:3000/saveData" method="post" id="bookingForm" onsubmit="saveData(event)">
+                                <label for="checkindate">Check In Date:</label>
+                                <input type="date" id="checkindate" name="checkindate" required>
+
+                                <label for="checkoutdate">Check-out Date:</label>
+                                <input type="date" id="checkoutdate" name="checkoutdate" required>
+
+                                <label for="roomtype">Room Type:</label>
+                                <select id="roomtype" name="roomtype">
+                                    <option value="single">Single Room</option>
+                                    <option value="double">Double Room</option>
+                                    <option value="suite">Suite</option>
+                                </select>
+                                <label for="guests">Number of Guests:</label>
+                                <input type="number" id="guests" name="guests" min="1" required>
+                                <input class="book-now" type="submit" value="Book Now">
+                            </form>
+
+                        </section>
+                    </aside>
+                </div>
+            </div>
+            <div id="bookingSuccessPopup" class="booking-popup">
+                <div class="booking-popup-content">
+                    <span class="close-popup" onclick="closeBookingPopup()">&times;</span>
+                    <h2>Booking Successful!</h2>
+                    <p>Thank you for choosing our hotel. Your booking has been confirmed.</p>
+                    <button class="close-popup-button" onclick="closeBookingPopup()">OK</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <ul class="social-icon">
+            <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="https://twitter.com/?lang=en-id">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+        </ul>
+        <p>Group 10 Section Surabaya © 2023 </p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Set check-in date to today
+            document.getElementById('check-in-date').valueAsDate = new Date();
+
+            // Set check-out date to tomorrow
+            const tomorrow = new Date();
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            document.getElementById('check-out-date').valueAsDate = tomorrow;
+        });
+
+        function setSearchInput(destination) {
+            document.getElementById('searchInput').value = destination;
+        }
+
+        function searchHotels() {
+            const searchInput = document.getElementById('searchInput').value;
+            const checkInDate = document.getElementById('check-in-date').value;
+            const checkOutDate = document.getElementById('check-out-date').value;
+
+            console.log('Search Input:', searchInput);
+            console.log('Check-In Date:', checkInDate);
+            console.log('Check-Out Date:', checkOutDate);
+            // Tambahkan logika untuk menangani pencarian berdasarkan parameter yang dipilih
+        }
+    </script>
+    <script>
+        // Add this function to show the booking success pop-up
+        function showBookingSuccessPopup() {
+            document.getElementById('bookingSuccessPopup').style.display = 'flex';
+        }
+
+        // Add this function to close the booking success pop-up
+        function closeBookingPopup() {
+            document.getElementById('bookingSuccessPopup').style.display = 'none';
+        }
+
+        // Update your existing function to include showing the pop-up
+        function bookNow() {
+            const checkInDate = document.getElementById('check-in-date').value;
+            const checkOutDate = document.getElementById('check-out-date').value;
+
+            // Add logic to handle the search
+
+            // Show the booking success pop-up
+            showBookingSuccessPopup();
+        }
+    </script>
+
+<script>
+    function saveData(event) {
+      event.preventDefault(); // Mencegah formulir dikirim secara default
+  
+      // Mengumpulkan data formulir
+      var formData = {
+        checkindate: $('#checkindate').val(),
+        checkoutdate: $('#checkoutdate').val(),
+        roomtype: $('#roomtype').val(),
+        guests: $('#guests').val()
+      };
+  
+      // Menggunakan AJAX untuk mengirim formulir
+      $.ajax({
+        type: 'POST',
+        url: 'http://localhost:3000/saveData',
+        data: formData,
+        success: function(response) {
+          console.log('Data berhasil disimpan:', response);
+          // Tambahkan logika lain jika diperlukan
+        },
+        error: function(error) {
+          console.error('Gagal menyimpan data:', error);
+          // Tambahkan logika lain jika diperlukan
+        }
+      });
+    }
+  </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="/script/script.js"></script>
+    <script src="/server.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</body>
+
+</html>
+
+<form action="#" method="post" id="bookingForm" onsubmit="saveData(event)"></form>
