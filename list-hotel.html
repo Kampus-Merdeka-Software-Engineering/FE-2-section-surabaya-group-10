@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style4.css">
+    <title>Capstone Project</title>
+</head>
+
+<body>
+    <header class="section1">
+        <nav>
+            <div class="logo"><img src="Asset/archipelago.png" alt=""></div>
+            <div class="top-buttons">
+                <a href="index.html" class="home-button">Home</a>
+                <a href="about.html" class="about-button">About Us</a>
+            </div>
+        </nav>
+        <img src="Asset/pict1.jpg" alt="">
+
+        <div id="search" class="search">
+            <div class="searchbar">
+                <div class="inputbar">
+                    <input id="searchInput" name="searchInput" type="text" placeholder="Enter a City or Hotel" required>
+                </div>
+                <button class="searchBtn1">
+                    <p><span>Check In</span></p>
+                    <span> <input type="date" id="check-in-date" name="check-in-date" required></span>
+                </button>
+                <button class="searchBtn1">
+                    <p><span>Check Out</span></p>
+                    <span><input type="date" id="check-out-date" name="check-out-date" required></span>
+                </button>
+                <button class="searchBtn">
+                    <p>Cari</p>
+                </button>
+            </div>
+        </div>  
+    </header>
+    <main>
+        <section>
+            <div class="recommended">
+                <h2>This is what we got for you</h2>
+                <div id="card-container" class="card-container">
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="social-icon">
+            <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="https://twitter.com/?lang=en-id">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+        </ul>
+        <p>Group 10 Section Surabaya © 2023 </p>
+    </footer>
+    <script>
+        async function fetchData() {
+            try {
+                const urlParams = new URLSearchParams(window.location.search);
+                const searchValue = urlParams.get('search')
+                const response = await fetch('http://localhost:5000/api/posts/search?query=' + searchValue);
+                const data = await response.json();
+                const hotels = data.hotels
+
+                if (hotels.length > 0) {
+                    let htmlContent = '';
+
+                    hotels.forEach((hotel, index) => {
+                        htmlContent += `
+                            <div class="card">
+                                <a href="hotel-detail.html?id=${hotel.id}">
+                                    <img src="${hotel.images[0].url}" alt="Gambar ${index + 1}">
+                                    <div class="card-content">
+                                        <h3>${hotel.name}</h3>
+                                        <p>${hotel.city}</p>
+                                        <h4>Rp${hotel.price}</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        `;
+                    });
+
+                    document.getElementById('card-container').innerHTML = htmlContent;
+                } else {
+                    console.error('Data structure is not as expected.');
+                }
+            }
+            catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        }
+
+        fetchData();
+
+    </script>
+    <script src="js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

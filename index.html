@@ -16,15 +16,15 @@
             <div class="logo"><img src="Asset/archipelago.png" alt=""></div>
             <div class="top-buttons">
                 <a href="index.html" class="home-button">Home</a>
-                <a href="html/about.html" class="about-button">About Us</a>
+                <a href="about.html" class="about-button">About Us</a>
             </div>
         </nav>
         <img src="Asset/pict1-lp.jpg" alt="">
 
-        <div class="search">
+        <div id="search" class="search">
             <div class="searchbar">
                 <div class="inputbar">
-                    <input id="searchInput" name="searchInput" type="text" placeholder="Enter a City, Locality or Hotel" value>
+                    <input id="searchInput" name="searchInput" type="text" placeholder="Enter a City or Hotel" required>
                 </div>
                 <button class="searchBtn1">
                     <p><span>Check In</span></p>
@@ -35,7 +35,7 @@
                     <span><input type="date" id="check-out-date" name="check-out-date" required></span>
                 </button>
                 <button class="searchBtn">
-                    <a href="/html/list-hotel.html"><p>Cari</p></a>
+                    <p>Cari</p>
                 </button>
             </div>
         </div>
@@ -139,123 +139,14 @@
         <section>
             <div class="recommended" id="recommended">
                 <h2>Recommended for you</h2>
-                <div class="card-container">
-                    <div class="card">
-                        <a href="html/hotel-detail.html">
-                            <img src="https://images.reddoorz.com/photos/256966/android_app_large_520x420_slice1.webp"
-                            alt="Gambar 1">
-                            <div class="card-content">
-                                <h3>Sans Hotel Puri Indah Jakarta</h3>
-                                <p>Jakarta</p>
-                                <h4>Rp288,000</h4>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="html/hotel-detail2.html">
-                            <img src="Asset/wyndham1.webp"
-                            alt="Gambar 1">
-                            <div class="card-content">
-                                <h3>Wyndham Casablanca Jakarta</h3>
-                                <p>Jakarta</p>
-                                <h4>Rp1,000,000</h4>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="html/hotel-detail3.html">
-                            <img src="Asset/methos1.jpg"
-                            alt="Gambar 1">
-                            <div class="card-content">
-                                <h3>Methos Homestay Raja Ampat</h3>
-                                <p>Raja Ampat</p>
-                                <h4>Rp888,000</h4>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="html/hotel-detail4.html">
-                            <img src="Asset/golden1.webp"
-                            alt="Gambar 1">
-                            <div class="card-content">
-                                <h3>Golden Tulip Essential</h3>
-                                <p>Bali</p>
-                                <h4>Rp588,000</h4>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="html/hotel-detail5.html">
-                            <img src="Asset/artotel1.webp"
-                            alt="Gambar 1">
-                            <div class="card-content">
-                                <h3>Artotel Suites Mangkuhulur</h3>
-                                <p>Jakarta</p>
-                                <h4>Rp600,000</h4>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="html/hotel-detail6.html">
-                            <img src="Asset/aryaduta1.webp"
-                            alt="Gambar 1">
-                            <div class="card-content">
-                                <h3>Aryaduta Palembang</h3>
-                                <p>Palembang</p>
-                                <h4>Rp900,000</h4>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="html/hotel-detail7.html">
-                            <img src="Asset/adiwana1.webp"
-                            alt="Gambar 1">
-                            <div class="card-content">
-                                <h3>Adiwana Resort Jembawan</h3>
-                                <p>Bali</p>
-                                <h4>Rp1,200,000</h4>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="html/hotel-detail8.html">
-                            <img src="Asset/ibis1.webp"
-                            alt="Gambar 1">
-                            <div class="card-content">
-                                <h3>Ibis Bandung Trans Studio</h3>
-                                <p>Bandung</p>
-                                <h4>Rp600,000</h4>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="html/hotel-detail9.html">
-                            <img src="Asset/amanuba1.webp"
-                            alt="Gambar 1">
-                            <div class="card-content">  
-                                <h3>Amanuba Hotel & Resort Rancamaya</h3>
-                                <p>Bogor</p>
-                                <h4>Rp900,000</h4>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="html/hotel-detail10.html">
-                            <img src="Asset/balava1.webp"
-                            alt="Gambar 1">
-                            <div class="card-content">
-                                <h3>The Balava Hotel</h3>
-                                <p>Malang</p>
-                                <h4>Rp400,000</h4>
-                            </div>
-                        </a>
-                    </div>
+                <div id="card-container" class="card-container">
+                    
                 </div>
             </div>
         </section>
         <section>
             <div class="wrapper">
-                <form id="subscribeForm" class="card-content2">
+                <div class="card-content2">
                   <div class="container">
                     <div class="image">
                       <i class="fas fa-envelope"></i>
@@ -263,13 +154,13 @@
                     <h1>Email Subscribe</h1>
                     <p>Subscribe to our updates for the latest promotions and news.</p>
                   </div>
-                  <div class="form-input2">
+                  <form id="form-email" class="form-input2">
                     <label for="email"> Email : </label>
-                    <input type="email" id="email" placeholder="Enter Your Email Here" name="email" required>
-                    <button onclick="submitForm()" class="subscribe-btn" type="button">Subscribe</button>
-                  </div>
-                </form>
-              </div>
+                    <input type="email" id="email" placeholder="Enter Your Email Here" name="email" required >
+                    <button class="subscribe-btn" type="submit">Subscribe</button>
+                  </form>
+                </div>
+            </div>
         </section>
     </main>
     <footer class="footer">
@@ -314,45 +205,99 @@
     </script>
 <!-- Di dalam tag <script> di akhir halaman HTML Anda -->
     <script>
-        async function submitForm() {
-          const emailInput = document.getElementById('email');
-          const email = emailInput.value.trim();
-    
-          if (!email) {
-            showPopup('Email is required.');
-            return;
-          }
-    
-          try {
-            const response = await fetch('/subscribe', {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-              },
-              body: JSON.stringify({ email }),
-            });
-    
-            if (response.ok) {
-              const result = await response.json();
-              showPopup(result.message);
-            } else {
-              console.error('Failed to subscribe.');
-              showPopup('Failed to subscribe. Please try again.');
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        const form = document.getElementById('form-email');
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            if (!isValidEmail(email)) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Invalid Email',
+                    text: 'Please enter a valid email address.',
+                    confirmButtonText: 'OK',
+                })
             }
-          } catch (error) {
-            console.error('Error:', error);
-            showPopup('An error occurred. Please try again later.');
-          }
-        }
+
+            try {
+                const response = await fetch('http://localhost:5000/api/email', {
+                    method: 'POST',
+                    mode: 'cors',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ email })
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+
+                if (response.status === 201) {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Email Sent',
+                        text: 'Thank you for subscribing.',
+                        confirmButtonText: 'OK',
+                    })
+                }
+
+                if (response.status === 500) {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Internal Server Error',
+                        text: 'Something went wrong. Please try again later.',
+                        confirmButtonText: 'OK',
+                    })
+                }
+            } catch (err) {
+                console.error(err);
+            }
+        });
     
-        function showPopup(message) {
-          alert(message);
+        async function getData() {
+            try {
+                const response = await fetch('http://localhost:5000/api/posts');
+                const data = await response.json();
+                const hotels = data.data
+
+                if (hotels.length > 0) {
+                    let htmlContent = '';
+
+                    hotels.forEach((hotel, index) => {
+                        htmlContent += `
+                            <div class="card">
+                                <a href="hotel-detail.html?id=${hotel.id}">
+                                    <img src="${hotel.images[0].url}" alt="Gambar ${index + 1}">
+                                    <div class="card-content">
+                                        <h3>${hotel.name}</h3>
+                                        <p>${hotel.city}</p>
+                                        <h4>Rp${hotel.price}</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        `;
+                    });
+
+                    document.getElementById('card-container').innerHTML = htmlContent;
+                } else {
+                    console.error('Data structure is not as expected.');
+                }
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
         }
-      </script>
+
+        getData();
+
+    </script>
+    <script src="js/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="script/script.js"></script>
-    <script src="server.js"></script>
 </body>
 
 </html>
