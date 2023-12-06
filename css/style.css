@@ -20,11 +20,15 @@
   max-width: 180px !important;
 }
 
+.swal2-title {
+  color: white !important;
+}
+
 .swal2-html-container {
   font-size: 16px;
   color: #ffffff !important; /* Warna teks */
   max-width: 600px; /* Lebar maksimum */
-  text-align: justify; /* Arah teks */
+  text-align: center; /* Arah teks */
   line-height: 1.6; /* Tinggi baris */
 }
 
@@ -431,6 +435,9 @@ nav {
 }
 
 .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 15px;
 }
 
