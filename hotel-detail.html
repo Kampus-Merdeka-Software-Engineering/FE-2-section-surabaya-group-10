@@ -68,7 +68,7 @@
 
         async function getHotel() {
             try {
-                const response = await fetch('http://localhost:5000/api/posts/' + hotelId);
+                const response = await fetch('https://be-2-section-surabaya-group-10.vercel.app/api/posts/' + hotelId);
                 const data = await response.json();
 
                 if (data) {
@@ -177,7 +177,7 @@
             };
             
             try {
-                const response = await fetch('http://localhost:5000/api/bookings', {
+                const response = await fetch('https://be-2-section-surabaya-group-10.vercel.app/api/bookings', {
                     method: 'POST',
                     body: JSON.stringify(bookingData),
                     headers: {

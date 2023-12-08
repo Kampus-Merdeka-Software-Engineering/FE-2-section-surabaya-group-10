@@ -70,7 +70,7 @@
             try {
                 const urlParams = new URLSearchParams(window.location.search);
                 const searchValue = urlParams.get('search')
-                const response = await fetch('http://localhost:5000/api/posts/search?query=' + searchValue);
+                const response = await fetch('https://be-2-section-surabaya-group-10.vercel.app/api/posts/search?query=' + searchValue);
                 const data = await response.json();
                 const hotels = data.hotels
 
